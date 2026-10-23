@@ -137,7 +137,7 @@ button:active{transform:translateY(1px)}
       <div class="rule">切り口は小数点まで計測。半分に近いほど高得点。<br>連続成功でコンボ倍率アップ。</div>
       <button id="startBtn" type="button">はじめる</button>
       <button id="rankOpen" class="ghost" type="button" hidden>ランキング</button>
-      <div class="ver">v1.0.0</div>
+      <div class="ver">v1.0.1</div>
     </div>
   </div>
 
@@ -641,7 +641,7 @@ addEventListener('resize', () => { if (!$('over').hidden) drawViz(1); });
 
 /* ---------- オンラインランキング（Google Apps Script + スプレッドシート。gas/Code.gs 参照） ---------- */
 // 空のあいだはランキング機能ごと非表示
-const RANK_URL = '';
+const RANK_URL = 'https://script.google.com/macros/s/AKfycbxShmrHzQ0qXB2xj8D_g6iNdlPFXMc8PKQAgxXRaTaFSKtx_J6lryU2Lm1mv822WKeQDw/exec';
 let rankBusy = false, submitted = false, runId = 0, myName = '';
 try { myName = localStorage.getItem('spatto-name') || ''; } catch(e) {}
 if (RANK_URL) $('rankOpen').hidden = false;

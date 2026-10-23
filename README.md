@@ -20,6 +20,8 @@
 発行された `…/exec` のURLを `python3 build.py src.html <URL>` で `index.html` に設定すると、タイトルとリザルトにランキングのボタンが出る。
 URLが空のときはランキング機能ごと非表示になる。
 
+更新時は `python3 build.py src.html https://script.google.com/macros/s/AKfycbxShmrHzQ0qXB2xj8D_g6iNdlPFXMc8PKQAgxXRaTaFSKtx_J6lryU2Lm1mv822WKeQDw/exec` で組み立てる。
+
 ## バージョン
 
 タイトル画面に表示。更新のたびに上げる。
